@@ -10,9 +10,20 @@ html, body{
 a{
     color:#fff;
 }
+a:active,
+a:focus,
+button:active,
+button:focus{
+    outline: none;
+    box-shadow: none;
+}
 a:hover{
     color:#fff;
     text-decoration: none;
+}
+iframe{
+    width: 100%;
+    height: 500px;
 }
 .section-block{
     padding: 100px 0px;
@@ -22,6 +33,7 @@ a:hover{
 }
 .section-block .section-title{
     font-weight:bold;
+
     font-size:48px;
     text-align: center;
 }
@@ -211,6 +223,7 @@ header .title-studio{
 .services .title{
     text-align: center;
     font-weight:bold;
+    font-size:30px;
 }
 .services .title-container{
     height: 100%;
@@ -220,4 +233,51 @@ header .title-studio{
 }
 .services .mastering-service{
     background-image: url('../img/mastering.jpg');
+}
+.how-we-work{
+    background-image: url('../img/video-bg.jpg');
+    background-size: cover;
+    height:500px;
+    background-position: center;
+    position: relative;
+    padding: 0;
+}
+.how-we-work .section-title{
+    padding-top: 100px;
+}
+.how-we-work .youtube-container{
+    color: #fff;
+    position: relative;
+    
+}
+
+.how-we-work:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #3D0B51 5%, #0F0684 80%);
+    opacity: .6;
+    z-index: 0;
+}
+
+.how-we-work .button-container{
+    margin-top: 40px;
+}
+.button-container button{
+    background: none;
+    border:none;
+    font-size:100px;
+    color:#fff;
+}
+.button-container button i{
+    text-shadow: 1px 1px 22px black;
+    transition: all .3s ease;
+}
+.button-container button i:hover{
+    cursor: pointer;
+    color: #0F0684;
+    text-shadow: none;
 }
