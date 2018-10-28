@@ -281,3 +281,34 @@ header .title-studio{
     color: #0F0684;
     text-shadow: none;
 }
+.prices{
+    background:url('../img/prices-block.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+.prices:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: -1;
+}
+.prices .section-title{
+    color:#fff;
+}
+.prices .price-container{
+    background-color: #fff;
+    padding: 20px;
+}
+.price-container .price-title{
+    text-align: center;
+}
+.price-title sup,
+.price-title sub{
+    font-size:.8rem;
+}
