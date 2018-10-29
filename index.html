@@ -232,7 +232,39 @@
                 </div>
             </div>
         </section>
-        
+        <section class="section-block testimonials">
+            <div class="container">
+                <h3 class="section-title">Отзывы</h3>
+                <hr class="divider">
+                <div id="testimonials-slider" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#testimonials-slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimonials-slider" data-slide-to="1"></li>
+                        <li data-target="#testimonials-slider" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active testimonial">
+                            <p>Pariatur enim nulla dolore in id qui labore sint in veniam ad amet. Sint veniam minim nisi adipisicing ipsum amet ut commodo nostrud. Cupidatat cillum elit enim exercitation exercitation consectetur adipisicing laborum exercitation nulla est. Voluptate sit anim labore exercitation reprehenderit sit quis ut cupidatat laboris ut ea. Sit deserunt nulla consequat cupidatat fugiat.</p>
+                            <p>
+                                <cite>Kirill Tovpinets</cite>
+                            </p>
+                        </div>
+                        <div class="carousel-item testimonial">
+                            <p>Ad elit amet mollit do fugiat et ipsum esse velit eu reprehenderit laboris. Aliqua do qui enim cillum in et consectetur. Culpa ex commodo consequat excepteur est anim nisi elit quis labore labore quis. Anim ullamco sit fugiat est magna culpa. Nulla excepteur cupidatat velit labore minim non incididunt in cillum esse laborum. Non nisi adipisicing esse voluptate anim in sit tempor qui commodo laboris officia.</p>
+                            <p>
+                                <cite>Kirill Tovpinets</cite>
+                            </p>
+                        </div>
+                        <div class="carousel-item testimonial">
+                            <p>Reprehenderit reprehenderit deserunt amet amet proident in anim magna eiusmod aliqua aliquip non cupidatat Lorem. Velit in non nisi officia consectetur aliquip. Esse nulla ex consectetur elit qui ut. Ea commodo veniam aute irure cillum sit consequat ea nisi. Tempor labore sit aute veniam nulla ut. Reprehenderit consequat elit laborum ad. Aute labore est ex consequat dolore laboris aute irure minim reprehenderit exercitation.</p>
+                            <p>
+                                <cite>Kirill Tovpinets</cite>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="section-block news-section">
             <div class="container">
                 <h3 class="section-title">Наш блог</h3>
@@ -300,11 +332,46 @@
                   </div>
             </div>
         </section>
+        <section class="section-block gallery">
+            <div class="grid-container">
+                <div class="photo">
+                    <img src="img/gallery/T01A1778.jpg" alt="" class="photo">
+                </div>
+                <div class="photo">
+                    <img src="img/gallery/T01A1905.jpg" alt="" class="photo">
+                </div>
+                <div class="photo">
+                    <img src="img/gallery/T01A1837.jpg" alt="" class="photo">
+                </div>
+                <div class="photo">
+                    <img src="img/gallery/T01A1910.jpg" alt="" class="photo">
+                </div>
+                <div class="photo">
+                    <img src="img/gallery/T01A1795.jpg" alt="" class="photo">
+                </div>
+                <div class="photo">
+                    <img src="img/gallery/T01A1797.jpg" alt="" class="photo">
+                </div>
+            </div>
+        </section>
+        <section class="section-block contacts">
+            <div id="map" class="map-container"></div>
+            <script>
+                var map;
+                function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: -34.397, lng: 150.644},
+                    zoom: 8
+                });
+                }
+            </script>
+        </section>
     </main>
     <footer></footer>
     
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrpwOEtZp9kSy0w0ml5sdwKRui1FPtXSo&callback=initMap"
+    async defer></script>
     <script src="js/functions.js"></script>
     <script src="js/main.js"></script>
     <script>
