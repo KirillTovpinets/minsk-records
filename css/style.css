@@ -400,11 +400,11 @@ header .title-studio{
 .contacts .map-container{
     height: 500px;
 }
-.contacts form{
+.contact-form form{
     width: 70%;
 }
 
-.contacts form .form-control{
+.contact-form form .form-control{
     border-radius: 0px;
     background-color: #D1DEFF;
     border:none;
@@ -413,7 +413,7 @@ header .title-studio{
 .form-control:focus{
     box-shadow: 0 0 5px 0px #0F0684;
 }
-.contacts form .btn{
+.contact-form form .btn{
     background-color: #0F0684;
     border-radius: 0px;
     color:#fff;
