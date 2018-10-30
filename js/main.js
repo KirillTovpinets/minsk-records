@@ -3,13 +3,14 @@ $('.services .service').hover(servHoverUp, servHoverDown);
 
 let videoPlayer = {};
 
-
+const today = new Date();
+$('#current-year').text(today.getFullYear());
 function onYouTubeIframeAPIReady(){
     $('#play-btn').click(() => (videoPlayer = createIframe()));
 }
 
 let map = initMap();
-$('a[href^="#"]').click(function(){
+$('nav a[href^="#"], .scroll-top').click(function(){
     let fromTop, target;
     target = $(this).attr('href');
     fromTop = $(target).offset().top;
