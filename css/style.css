@@ -380,6 +380,9 @@ header .title-studio{
 .testimonials .testimonial p{
     text-align: center;
 }
+.gallery{
+    padding: 0;
+}
 .gallery .grid-container{
     display:grid;
     grid-template-columns: auto auto auto;
@@ -396,4 +399,22 @@ header .title-studio{
 }
 .contacts .map-container{
     height: 500px;
+}
+.contacts form{
+    width: 70%;
+}
+
+.contacts form .form-control{
+    border-radius: 0px;
+    background-color: #D1DEFF;
+    border:none;
+    padding: 0.875rem .75rem;
+}
+.form-control:focus{
+    box-shadow: 0 0 5px 0px #0F0684;
+}
+.contacts form .btn{
+    background-color: #0F0684;
+    border-radius: 0px;
+    color:#fff;
 }

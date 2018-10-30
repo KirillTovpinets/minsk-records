@@ -8,6 +8,7 @@ function onYouTubeIframeAPIReady(){
     $('#play-btn').click(() => (videoPlayer = createIframe()));
 }
 
+let map = initMap();
 // SC.initialize({
 //     client_id: 'YOUR_CLIENT_ID'
 // });
