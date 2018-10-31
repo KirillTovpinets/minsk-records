@@ -30,7 +30,11 @@ function initMap() {
         center: position,
         zoom: 15
     });
-    let marker = new google.maps.Marker({position: position, map: map});
+    let marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        icon: 'img/marker.png'
+    });
 
     var request = {
         placeId: 'ChIJZRHRnKDa20YRFicN1hG3Shc',

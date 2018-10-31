@@ -183,56 +183,33 @@ header .title-studio{
 .about-section .row{
     margin-top: -150px;
 }
-.services .description{
-    position: absolute;
-    opacity: 0;
-    left: 0;
-    top: 20%;
+.services .service .icon{
+    height: 140px;
+    width: 110px;
+    margin: 0 auto;
+    background: url('../img/dj-icons.jpg');
 }
-.services .service{
-    background-image: url('../img/record-srvs.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    color:#fff;
-    height:350px;
-    position: relative;
-    z-index: 1;
-}
-.services .service-container{
-    height: 100%;
-    position: relative;
-}
-.services .service:hover{
-    cursor: pointer;
-}
-.services .service:hover:before{
-    background: linear-gradient(to right, #3D0B51 5%, #0143D8 80%);
-    opacity: .8;
-}
-.services .service:before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: rgba(0, 0, 0, .6);
-}
-.services .title{
+.services .service .title{
     text-align: center;
-    font-weight:bold;
-    font-size:30px;
 }
-.services .title-container{
-    height: 100%;
+.services .record-sevice .icon{
+    background-position: -120px -546px;
+} 
+.services .compound-service .icon{
+    background-position: 229px 319px;
 }
-.services .compound-service{
-    background-image: url('../img/compound.jpg');
+.services .mastering-service .icon{
+    background-position: -563px -330px;
 }
-.services .mastering-service{
-    background-image: url('../img/mastering.jpg');
+.services .arrangement-service .icon{
+    background-position: -338px -754px;
+}
+.services .sound-service .icon{
+    background-position: -772px -123px;
+}
+.services .description{
+    margin-top: 20px;
+    text-align: center;
 }
 .how-we-work{
     background-image: url('../img/video-bg.jpg');

@@ -1,6 +1,3 @@
-
-$('.services .service').hover(servHoverUp, servHoverDown);
-
 let videoPlayer = {};
 
 const today = new Date();
