@@ -189,6 +189,9 @@ header .title-studio{
     margin: 0 auto;
     background: url('../img/dj-icons.jpg');
 }
+.services .service{
+    margin-bottom: 20px;
+}
 .services .service .title{
     text-align: center;
 }
@@ -206,6 +209,9 @@ header .title-studio{
 }
 .services .sound-service .icon{
     background-position: -772px -123px;
+}
+.services .song-service .icon{
+    background-position: -347px -123px;
 }
 .services .description{
     margin-top: 20px;
@@ -296,30 +302,36 @@ header .title-studio{
 }
 .prices .price-container{
     background-color: #fff;
-    padding: 30px 20px;
-}
-.price-container .price-title{
-    text-align: center;
-    font-weight: bold;
+    font-size:14px;
+    border-right:1px solid #fff;
 }
 .price-container .service-title{
     text-align: center;
+    padding: 20px;
+    background-color: #0143D8;
+    color: #fff;
+    margin-bottom: 0;
 }
-.price-container .divider{
-    margin-bottom: 30px;
-}
-.price-title sup,
-.price-title sub{
-    font-size:.8rem;
-    font-weight: normal;
-}
-.price-title sup{
-    top: -1.45rem;
+.prices .service-price:last-child .price-container{
+    border:none;
 }
 .prices .service-content .content-item{
     border-bottom: 1px solid #ccc;
-    padding: 5px 0px;
-
+    padding: 15px 0px;
+}
+.prices .service-content .content-item:last-child{
+    border-bottom: none;
+}
+.prices .service-content .content-item h6{
+    margin-bottom: 0px;
+}
+.prices .service-content .content-item small{
+    font-size: 85%;
+    line-height: .7;
+}
+.prices .service-content{
+    padding: 20px 30px;
+    text-align: center;
 }
 .news-section .news-content{
     background-color: #0143D8;
@@ -373,6 +385,20 @@ header .title-studio{
 .gallery .photo:hover>img{
     cursor: pointer;
     transform: scale(1.3);
+}
+.contacts{
+    padding-bottom: 0;
+}
+.contacts .contact-number{
+    background-color: #0143D8;
+    padding: 20px 0px;
+    color: #fff;
+}
+.contacts .contact-number h3{
+    margin-bottom: 0;
+}
+.contacts .contact-number h3 .fab{
+    font-size:18px;
 }
 .contacts .map-container{
     height: 500px;
