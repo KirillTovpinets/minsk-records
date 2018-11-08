@@ -126,7 +126,7 @@ header:before{
     opacity: .7;
 }
 header .title{
-    margin-top: 100px;
+    margin-top: 200px;
 }
 header .title-studio{
     color: #fff;
@@ -166,7 +166,7 @@ header .title-studio{
     transition: all .3s ease;
 }
 .social-container li a:hover{
-    color:#0143D8;
+    color:#333;
 }
 
 .about-section .text{
@@ -308,10 +308,15 @@ header .title-studio{
 .is-playing .stop-btn{
     color:#0143D8;
 }
+.our-clients .slick-track{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .our-clients img{
     filter: brightness(60%);
 }
-.our-clients .row{
+.our-clients .divider{
     margin-bottom: 30px;
 }
 .our-clients .client{
@@ -320,6 +325,7 @@ header .title-studio{
     text-align: center;
     font-family: 'Rubik Mono One', sans-serif;
     font-style: italic;
+    padding: 0 10px;
     line-height: 1;
     font-size:20px;
     transition: all .3s ease;
@@ -355,6 +361,9 @@ header .title-studio{
     height: 100%;
     background: rgba(0, 0, 0, .6);
     z-index: -1;
+}
+.prices .divider{
+    background-color: #fff;
 }
 .prices .section-title{
     color:#fff;
@@ -486,6 +495,22 @@ header .title-studio{
     color: #fff;
     font-size:14px;
     position: relative;
+}
+footer .to-top{
+    position: absolute;
+    top: -18px;
+    border:none;
+    color:#fff;
+    text-align: center;
+    left: 50%;
+    margin-left: -25px;
+    font-size:17px;
+    padding: 3px;
+    display: inline-block;
+    border-radius:50%;
+    width: 50px;
+    height: 50px;
+    background-color: #0143D8;
 }
 .contact-info .contact-item{
     margin-bottom: 10px;

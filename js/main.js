@@ -8,7 +8,7 @@ $(document).ready(function(){
     }
 
     let map = initMap();
-    $('nav a[href^="#"], .scroll-top').click(function(){
+    $('nav a[href^="#"], .to-top').click(function(){
         let fromTop, target;
         target = $(this).attr('href');
         fromTop = $(target).offset().top;
@@ -34,4 +34,11 @@ $(document).ready(function(){
     $('audio').bind('ended', function(){
         $('.is-playing').removeClass('is-playing');
     })
+
+    $('.clients-slider').slick({
+        slidesToShow: 5,
+        lazyload:true,
+        arrows:false,
+        autoplay:true
+    });
 })
