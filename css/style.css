@@ -7,6 +7,10 @@ html, body{
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+.row{
+	width: 100%;
+	margin: 0;
+}
 a{
     color:#fff;
 }
@@ -26,7 +30,7 @@ a:hover{
 }
 iframe{
     width: 100%;
-    height: 500px;
+    height: 100%;
 }
 .section-block{
     padding: 100px 0px;
@@ -270,7 +274,7 @@ header .title-studio{
     height: 100%;
     line-height:100%;
     white-space: nowrap;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.4);
     transition: all 1s ease;
 }
 .track .play-btn,
@@ -278,7 +282,8 @@ header .title-studio{
     background: none;
     font-size:2rem;
     border:none;
-    color:rgba(255, 255, 255, .6);
+		color:#fff;
+		transition: all .3s ease-in;
 }
 .track .stop-btn{
     display: none;
@@ -303,10 +308,8 @@ header .title-studio{
 .is-playing .play-container{
     background-color: rgba(0, 0, 0, 0);
 }
-.track:hover .play-btn,
-.track:hover .stop-btn,
-.is-playing .stop-btn{
-    color:#0143D8;
+.animated{
+	opacity: 0;
 }
 .our-clients .slick-track{
     display: flex;

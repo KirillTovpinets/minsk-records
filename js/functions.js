@@ -7,18 +7,18 @@ function servHoverDown(){
     $(this).find('.description').removeClass('fadeInDown');
 }
 function onPlayerReady(event) {
-    event.target.playVideo();
+    event.target.enqueue();
 }
 
 function onPlayerStateChange(event) {
     switch (event.data) {
         case YT.PlayerState.ENDED:
-            videoPlayer.destroy();    
+            // videoPlayer.destroy();    
             break;
         case YT.PlayerState.PAUSED:
-            setTimeout(function(){
-                videoPlayer.destroy();
-            }, 5000);
+            // setTimeout(function(){
+            //     // videoPlayer.destroy();
+            // }, 5000);
             break;
         default:
             break;
