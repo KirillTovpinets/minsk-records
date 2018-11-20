@@ -41,12 +41,12 @@ $(document).ready(function(){
         $('.is-playing').removeClass('is-playing');
     })
 
-    $('.clients-slider').slick({
-        slidesToShow: 5,
-        lazyload:true,
-        arrows:false,
-        autoplay:true
-		});
+    // $('.clients-slider').slick({
+    //     slidesToShow: 5,
+    //     lazyload:true,
+    //     arrows:false,
+    //     autoplay:true
+		// });
 
 		$('.track').hover(function () {
 			$(this).find('.animated').addClass('fadeInDown');
@@ -59,6 +59,6 @@ $(document).ready(function(){
 			}, 1000);
 		})
 		
-		const audioHeight = $('.audio-container').outerHeight();
-		$('.video-container').css("height", audioHeight);
+		// const audioHeight = $('.audio-container').outerHeight();
+		// $('.video-container').css("height", audioHeight);
 })

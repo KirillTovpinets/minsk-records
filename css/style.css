@@ -50,65 +50,7 @@ iframe{
     height: 5px;
     background-color: #0143D8;
 }
-.scroll-top{
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    z-index: 10;
-    background-color: #0143D8;
-    color:#fff;
-    transition: all .4s ease-in;
-}
-.scroll-container .title{
-    font-weight: bold;
-    margin-bottom: 0;
-}
 
-.scroll-container{
-    padding: 20px;
-}
-.scroll-top:after{
-    content:'';
-    background:#000;
-    display: block;
-    height: 25px;
-    position: absolute;
-    background-color: #0143D8;
-    width: 100%;
-    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
-    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
-    transition: all .4s ease-in;
-}
-.scroll-top:hover,
-.scroll-top:hover:after{
-    background-color: #fff;
-}
-.menu-btn{
-    background-color: #0143D8;
-    color:#fff;
-    border:none;
-    position: fixed;
-    top: 30px;
-    z-index: 10;
-    height:40px;
-    width:40px;
-    right: 30px;
-}
-.menu-btn:active,
-.menu-btn:focus{
-    outline: none;
-    box-shadow: none;
-}
-.menu-btn:hover{
-    cursor: pointer;
-}
-.menu-btn i{
-    transition: all .5s ease-in;
-}
-.menu-btn:hover i{
-    transform:rotate(90deg);
-    background-color: #fff;
-}
 header{
     height: 110vh;
     background-image: url('../img/header-bg.jpg');
@@ -117,17 +59,6 @@ header{
     background-attachment: fixed;
     position: relative;
     z-index: 0;
-}
-header:before{
-    content:'';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: linear-gradient(to right, #3D0B51 1%, #0143D8 80%);
-    opacity: .7;
 }
 header .title{
     margin-top: 200px;
@@ -150,6 +81,9 @@ header .title-studio{
 }
 .navbar a:hover{
     color:#0143D8;
+}
+header .logo{
+	width: 40%;
 }
 .social-links{
     position: absolute;
@@ -225,31 +159,16 @@ header .title-studio{
     text-align: center;
 }
 .how-we-work{
-    background-image: url('../img/video-bg.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color:rgba(0, 0, 0, .1);
     position: relative;
     padding: 0;
     z-index: 1;
-    color:#fff;
-    padding: 100px 0px;
+    padding: 100px 0px 0px;
 }
 .how-we-work .youtube-container{
     color: #fff;
     position: relative;
     
-}
-
-.how-we-work:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #3D0B51 5%, #0143D8 80%);
-    opacity: .6;
-    z-index: -1;
 }
 
 .how-we-work .button-container{
@@ -262,9 +181,6 @@ header .title-studio{
     vertical-align: middle;
     position: relative;
     overflow: hidden;
-}
-.how-we-work .divider{
-    background: #fff;
 }
 .track .play-container{
     position: absolute;
@@ -280,7 +196,7 @@ header .title-studio{
 .track .play-btn,
 .track .stop-btn{
     background: none;
-    font-size:2rem;
+    font-size:4rem;
     border:none;
 		color:#fff;
 		transition: all .3s ease-in;
@@ -311,6 +227,9 @@ header .title-studio{
 .animated{
 	opacity: 0;
 }
+.video-container{
+	height:700px;
+}
 .our-clients .slick-track{
     display: flex;
     align-items: center;
@@ -323,6 +242,34 @@ header .title-studio{
     margin-bottom: 30px;
 }
 .our-clients .client{
+	background-size: cover;
+	background-position: center;
+	height:150px;
+	position: relative;
+	color: #fff;
+}
+.our-clients .client .description{
+	color:#fff;
+}
+.our-clients .client img{
+	height: 100%;
+}
+.our-clients .main-client{
+	height:300px;
+}
+.our-clients .client-1{
+	background-image: url('../img/clients/Machete.jpg');
+}
+.our-clients .client-2{
+	background-image: url('../img/clients/Max.jpg');
+}
+.our-clients .client-3{
+	background-image: url('../img/clients/Kostov.jpg');
+}
+.our-clients .client-4{
+	background-image: url('../img/clients/otorvald.jpg');
+}
+.our-clients .client-name{
     display: block;
     color:#9a9a9a;
     text-align: center;
@@ -330,8 +277,17 @@ header .title-studio{
     font-style: italic;
     padding: 0 10px;
     line-height: 1;
-    font-size:20px;
+    font-size:30px;
     transition: all .3s ease;
+}
+.our-clients .main-clients{
+	margin-bottom: 20px;
+}
+.our-clients .description{
+	color:#9a9a9a;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 1.3;
 }
 .button-container button{
     background: none;
