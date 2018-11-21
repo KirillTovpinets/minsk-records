@@ -247,9 +247,52 @@ header .logo{
 	height:150px;
 	position: relative;
 	color: #fff;
+	padding: 0;
 }
-.our-clients .client .description{
+.our-clients .client .name{
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	font-size:10px;
+	display: inline-block;
+	padding: 5px 15px;
+	background-color:rgb(1,67,216, 1);;
+}
+.name .title{
+	text-transform: uppercase;
+}
+.our-clients .main-client .name{
+	font-size:20px;
+	bottom: 40px;
+}
+.our-clients .main-client .name .description{
 	color:#fff;
+}
+.our-clients .client .name:after{
+	content: '';
+	clip-path: polygon(0% 0%, 50% 0%, 0% 66%);
+	display: inline-block;
+	background-color: rgb(1,67,216, 1);
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: -39px;
+	top: 0;
+}
+.our-clients .main-client .name:after{
+	clip-path: polygon(0% 0%, 100% 0%, 0% 104%);
+}
+.client .name svg{
+	position: absolute;
+	right: 0;
+}
+.our-clients .client > .description{
+	color:#fff;
+	margin-top: 130px;
+	background-color: rgba(0, 0, 0, .7);
+	padding: 10px 15px;
+	text-align: center;
+	line-height: 1.3;
 }
 .our-clients .client img{
 	height: 100%;
@@ -282,12 +325,6 @@ header .logo{
 }
 .our-clients .main-clients{
 	margin-bottom: 20px;
-}
-.our-clients .description{
-	color:#9a9a9a;
-	margin-top: 10px;
-	text-align: center;
-	line-height: 1.3;
 }
 .button-container button{
     background: none;
