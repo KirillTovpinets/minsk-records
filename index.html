@@ -15,11 +15,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <title>Document</title>
 </head>
 <body id="top">
     <header>
+			<div class="overlay"></div>
         <nav class="navbar justify-content-center">
             <nav class="navbar navbar-expand-lg bg-transparent">
                 <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
@@ -67,22 +69,7 @@
         </div>
     </header>
     <main>
-        <section class="section-block about-section" id="aboutus">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-0 image">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text">
-                        <h2 class="title">О нас</h2>
-                        <p>В студии звукозаписи Nerv-Records работаетают квалифицированные специалисты с многолетним опытом работы. Мы используем только профессиональное оборудование и инструменты.</p>
-                        <h2 class="title">Почему именно мы</h2>
-                        <p>Заказывая работу у нас, вы можете не сомневаться в качестве исполнения и сроках выполнения работы. Индивидуальный подход к каждому клиенту.
-                        Так же у нас действуют скидки на большие объемы работ.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section-block services pt-0" id="services">
+        <section class="section-block services" id="services">
             <div class="container">
                 <h3 class="section-title">Наши услуги </h3>
                 <hr class="divider">
@@ -142,6 +129,28 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+				</section>
+				<section class="section-block gallery" id="gallery">
+            <div class="row">
+                <div class="photo col-md-4 p-0">
+                    <a href="img/gallery/T01A1778.jpg" data-fancybox="gallery"><img src="img/gallery/T01A1778.jpg" alt="" class="photo"></a>
+                </div>
+                <div class="photo col-md-4 p-0">
+                    <a href="img/gallery/T01A1905.jpg" data-fancybox="gallery"><img src="img/gallery/T01A1905.jpg" alt="" class="photo"></a>
+                </div>
+                <div class="photo col-md-4 p-0">
+                    <a href="img/gallery/T01A1837.jpg" data-fancybox="gallery"><img src="img/gallery/T01A1837.jpg" alt="" class="photo"></a>
+                </div>
+                <div class="photo col-md-4 p-0">
+                    <a href="img/gallery/T01A1910.jpg" data-fancybox="gallery"><img src="img/gallery/T01A1910.jpg" alt="" class="photo"></a>
+                </div>
+                <div class="photo col-md-4 p-0">
+                    <a href="img/gallery/T01A1795.jpg" data-fancybox="gallery"><img src="img/gallery/T01A1795.jpg" alt="" class="photo"></a>
+                </div>
+                <div class="photo col-md-4 p-0">
+                    <a href="img/gallery/T01A1797.jpg" data-fancybox="gallery"><img src="img/gallery/T01A1797.jpg" alt="" class="photo"></a>
                 </div>
             </div>
         </section>
@@ -232,6 +241,10 @@
 									<div class="client col-md-4 client-2 main-client">
 										<div class="name">
 											<span>Макс Барских</span>
+											<svg height="40" width="30" class="triangle-on">
+													<polygon points="0,0 0,44 30,0" style="fill:rgb(60,60,60);"></polygon>
+													Sorry, your browser does not support inline SVG.
+											</svg>
 										</div>
 										<p class="description">Обладатель премии "Лучший украинский исполнитель" по версии MTV EMA 2010 и МУЗ-ТВ в категории "Прорыв года" (2012)</p>
 									</div>
@@ -241,6 +254,10 @@
 											<div class="name">
 												<span class="title">Knights Move</span>
 												<span class="description">(Германия)</span>
+												<svg height="25" width="30" class="triangle-on">
+														<polygon points="0,0 0,26 20,0" style="fill:rgb(60,60,60);"></polygon>
+														Sorry, your browser does not support inline SVG.
+												</svg>
 											</div>
 										</div>
 										<div class="client">
@@ -248,12 +265,20 @@
 											<div class="name">
 												<span class="title">Lucky4</span>
 												<span class="description">(Киев)</span>
+												<svg height="25" width="30" class="triangle-on">
+														<polygon points="0,0 0,26 20,0" style="fill:rgb(60,60,60);"></polygon>
+														Sorry, your browser does not support inline SVG.
+												</svg>
 											</div>
 										</div>
 									</div>
 									<div class="client col-md-4 client-1 main-client">
 											<div class="name">
 												<span>Мачете</span>
+												<svg height="40" width="30" class="triangle-on">
+														<polygon points="0,0 0,44 30,0" style="fill:rgb(60,60,60);"></polygon>
+														Sorry, your browser does not support inline SVG.
+												</svg>
 											</div>
 											<p class="description">Номинант на премию MTV EMA в категории «Лучший российский артист 2011»</p>
 									</div>
@@ -263,6 +288,10 @@
 											<div class="name">
 												<span class="title">Цвет алоэ</span>
 												<span class="description">(Минск)</span>
+												<svg height="25" width="30" class="triangle-on">
+														<polygon points="0,0 0,26 20,0" style="fill:rgb(60,60,60);"></polygon>
+														Sorry, your browser does not support inline SVG.
+												</svg>
 											</div>
 										</div>
 										<div class="client">
@@ -270,6 +299,10 @@
 											<div class="name">
 												<span class="title">Bahroma</span>
 												<span class="description">(Киев)</span>
+												<svg height="25" width="30" class="triangle-on">
+														<polygon points="0,0 0,26 20,0" style="fill:rgb(60,60,60);"></polygon>
+														Sorry, your browser does not support inline SVG.
+												</svg>
 											</div>
 										</div>
 									</div>
@@ -279,6 +312,10 @@
 											<div class="name">
 												<span class="title">P22</span>
 												<span class="description">(Москва)</span>
+												<svg height="25" width="30" class="triangle-on">
+														<polygon points="0,0 0,26 20,0" style="fill:rgb(60,60,60);"></polygon>
+														Sorry, your browser does not support inline SVG.
+												</svg>
 											</div>
 										</div>
 										<div class="client">
@@ -286,12 +323,20 @@
 											<div class="name">
 												<span class="title">Александр Патлис</span>
 												<span class="description">(Минск)</span>
+												<svg height="25" width="30" class="triangle-on">
+														<polygon points="0,0 0,26 20,0" style="fill:rgb(60,60,60);"></polygon>
+														Sorry, your browser does not support inline SVG.
+												</svg>
 											</div>
 										</div>
 									</div>
 									<div class="client col-md-4 client-3 main-client">
 											<div class="name">
 												<span>КРИСТИАН КОСТОВ</span>
+												<svg height="40" width="30" class="triangle-on">
+														<polygon points="0,0 0,44 30,0" style="fill:rgb(60,60,60);"></polygon>
+														Sorry, your browser does not support inline SVG.
+												</svg>
 											</div>
 											<p class="description">II место на EUROVISION 2О17, финалист телепроекта «Голос. Дети 2014»</p>
 									</div>
@@ -301,6 +346,10 @@
 											<div class="name">
 												<span class="title">Nuteki</span>
 												<span class="description">(Минск)</span>
+												<svg height="25" width="30" class="triangle-on">
+														<polygon points="0,0 0,26 20,0" style="fill:rgb(60,60,60);"></polygon>
+														Sorry, your browser does not support inline SVG.
+												</svg>
 											</div>
 										</div>
 										<div class="client">
@@ -308,12 +357,20 @@
 											<div class="name">
 												<span class="title">People inside</span>
 												<span class="description">(Киев)</span>
+												<svg height="25" width="30" class="triangle-on">
+														<polygon points="0,0 0,26 20,0" style="fill:rgb(60,60,60);"></polygon>
+														Sorry, your browser does not support inline SVG.
+												</svg>
 											</div>
 										</div>
 									</div>
 									<div class="client col-md-4 client-4 main-client">
 										<div class="name">
 											<span>O.TORVALD</span>
+											<svg height="40" width="30" class="triangle-on">
+													<polygon points="0,0 0,44 30,0" style="fill:rgb(60,60,60);"></polygon>
+													Sorry, your browser does not support inline SVG.
+											</svg>
 										</div>
 										<p class="description">Представители Украины на Eurovision 2017.</p>
 									</div>
@@ -480,54 +537,28 @@
                   </div>
             </div>
         </section>
-        <section class="section-block gallery" id="gallery">
-            <div class="grid-container">
-                <div class="photo">
-                    <img src="img/gallery/T01A1778.jpg" alt="" class="photo">
-                </div>
-                <div class="photo">
-                    <img src="img/gallery/T01A1905.jpg" alt="" class="photo">
-                </div>
-                <div class="photo">
-                    <img src="img/gallery/T01A1837.jpg" alt="" class="photo">
-                </div>
-                <div class="photo">
-                    <img src="img/gallery/T01A1910.jpg" alt="" class="photo">
-                </div>
-                <div class="photo">
-                    <img src="img/gallery/T01A1795.jpg" alt="" class="photo">
-                </div>
-                <div class="photo">
-                    <img src="img/gallery/T01A1797.jpg" alt="" class="photo">
-                </div>
-            </div>
-        </section>
         <section class="section-block contacts" id="contactus">
             <h3 class="section-title">Где нас найти</h3>
             <hr class="divider">
             <div id="map" class="map-container"></div>
-            <div class="contact-number">
-                <div class="container">
-                        <h3 class="d-flex justify-content-between">
-                            <span>Наш контактный номер</span>
-                            <span class="tel-number">+375 29 805-53-69 <i class="fab fa-telegram-plane"></i> <i class="fab fa-viber"></i> <i class="fab fa-whatsapp"></i></span>
-                        </h3>
-                </div>
-            </div>
         </section>
         <section class="section-block contact-form">
             
             <div class="container">
                 <h3 class="section-title">Свяжитесь с нами</h3>
                 <hr class="divider">
-
                 <form action="" class="mx-auto">
+										<a href="tel:+375298055369" class="phone-number">+375 (29) 805-53-69 
+											<span class="fab fa-telegram-plane"></span>
+											<span class="fab fa-viber"></span>
+											<span class="fab fa-whatsapp"></span>
+										</a>
                     <div class="row">
-                        <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 pl-0">
                             <label for="name">Имя</label>
                             <input type="text" name="name" class="form-control">
                         </div>
-                        <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 pr-0">
                             <label for="email">Email</label>
                             <input type="email" name="email" class="form-control">
                         </div>
@@ -579,12 +610,13 @@
             </div>
         </div>
     </footer>
-    <div class="copyright">
-        <p>&copy; <span id="current-year"></span> by  Studio Nerv-Records.</p>
+    <div class="copyright d-flex justify-content-center">
+        <p>&copy; <span id="current-year"></span> by  Studio Nerv-Records</p>
     </div>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrpwOEtZp9kSy0w0ml5sdwKRui1FPtXSo&libraries=places"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="js/jquery.fancybox.min.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/main.js"></script>
     <script>
