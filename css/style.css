@@ -93,7 +93,7 @@ header .title-studio{
     transition: all .3s ease-in-out;
 }
 .navbar a:hover{
-    color:#333;
+    color:#00ffff;
 }
 header .logo{
 	width: 40%;
@@ -117,7 +117,7 @@ header .logo{
     transition: all .3s ease;
 }
 .social-container li a:hover{
-    color:#333;
+		color:#00ffff;
 }
 
 .about-section .text{
@@ -278,6 +278,7 @@ header .logo{
 .our-clients .main-client .name{
 	font-size:20px;
 	bottom: 40px;
+	text-transform: uppercase;
 }
 .our-clients .main-client .name .description{
 	color:#fff;
@@ -484,7 +485,7 @@ header .logo{
 
 .contact-form form .form-control{
     border-radius: 0px;
-    background-color: #D1DEFF;
+    background-color: rgba(60, 60, 60, .3);
     border:none;
     padding: 0.875rem .75rem;
 }
@@ -555,5 +556,8 @@ form .phone-number{
     padding: 20px 0px;
 }
 .copyright p{
-    margin: 0;
+		margin: 0;
+}
+.copyright a{
+	color:#aaa;
 }
