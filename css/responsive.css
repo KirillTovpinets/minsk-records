@@ -1,5 +1,90 @@
-@media only screen and (min-width:1200px){}
-@media only screen and (min-width:992px){}
-@media only screen and (min-width:768px){}
-@media only screen and (min-width:567px){}
-@media only screen and (max-width:566px){}
+@media (max-width:1200px){
+	.our-clients .client > .description{
+		font-size:14px;
+	}
+	.news-section .carousel-indicators{
+		right: -100px;
+	}
+	.news-section .prev-btn{
+		right: 43%;
+	}
+	.news-section .next-btn{
+		right: 39%;
+	}
+}
+@media (max-width:992px){
+	.price-container .service-title{
+		font-size:1rem;
+	}
+	header .logo{
+		width: 60%;
+	}
+	.fixed-top-md{
+	}
+	.our-clients .client > .description{
+		font-size:10px;
+	}
+	.our-clients .client .name{
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.our-clients .client img{
+		width: 150%;
+		position: absolute;
+		left: -25%;
+	}
+	.our-clients .client .name .title{
+		display: block;
+	}
+	.our-clients .client .name .description{
+		font-size:8px;
+	}
+	.our-clients .client .name svg{
+		display: none;
+	}
+	.news-section .carousel-indicators{
+		right: -75px;
+	}
+	.news-section .prev-btn{
+		right: 43%;
+	}
+	.news-section .next-btn{
+		right: 37%;
+	}
+}
+@media (max-width:768px){
+	header .logo{
+		width: 80%;
+	}
+	.contact-form .phone-number{
+		font-size:20px;
+	}
+	.our-clients .client img{
+		width: 100%;
+		position: static;
+	}
+	.our-clients .client:not(.main-client){
+		height: auto;
+	}
+	.our-clients .client > .description{
+		font-size:14px;
+	}
+	.our-clients .client .name{
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.news-section .carousel-indicators{
+		right: -25px;
+	}
+	.news-section .prev-btn{
+		right: 90%;
+	}
+	.news-section .next-btn{
+		right: 81%;
+	}
+}
+@media (max-width:567px){}
+@media (max-width:566px){}

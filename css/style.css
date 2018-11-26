@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
 }
@@ -85,7 +86,8 @@ header .title-studio{
 .navbar{
     padding:.9rem 1rem;
 }
-.navbar a{
+.navbar a,
+.navbar button{
     color:#fff;
     z-index: 2;
     transition: all .3s ease-in-out;
@@ -106,7 +108,7 @@ header .logo{
     list-style-type: none;
     padding: 0;
 }
-.social-container li{
+.social-container li:not(:last-child){
     margin-right: 50px;
 }
 
@@ -258,6 +260,7 @@ header .logo{
 	height:150px;
 	position: relative;
 	color: #fff;
+	overflow: hidden;
 	padding: 0;
 }
 .our-clients .client .name{
