@@ -54,11 +54,20 @@
 	}
 }
 @media (max-width:768px){
+	form .phone-number{
+		padding: 5px 12px;
+	}
+	form .phone-number .number{
+		display: block;
+	}
+	header .title{
+		margin-top: 113px;
+	}
 	header .logo{
 		width: 80%;
 	}
 	.contact-form .phone-number{
-		font-size:20px;
+		font-size:19px;
 	}
 	.our-clients .client img{
 		width: 100%;
